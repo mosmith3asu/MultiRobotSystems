@@ -7,8 +7,6 @@ A MATLAB simulation of a six-robot swarm that finds a spreading oil spill and th
 
 Everything runs on a 100 × 100 grid over the unit square, with a spill that keeps diffusing while the robots move.
 
-This folder is part of the `MultiRobotSystems` coursework repo. The sibling folders `Flocking/` and `GillespiesDirectMethod/` hold the earlier homework: digraph consensus, flocking ODEs, and stochastic chemical-reaction models.
-
 ---
 
 ## Quick start
