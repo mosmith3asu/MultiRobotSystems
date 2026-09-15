@@ -93,7 +93,7 @@ The figures below come from running the unmodified algorithm in **GNU Octave 8.4
 
 *The white line is the c = 0.15 perimeter and black **+** marks are the robots. At the start, the robots sit in a cluster at the lower-left edge of a young, concentrated spill (peak ≈ 1.0). By the end they are spread around the perimeter of a much wider and weaker spill (peak ≈ 0.18).*
 
-![Perimeter tracks](figures/04_perimeter_tracks.png)
+![Perimeter tracks](OilSpill/figures/04_perimeter_tracks.png)
 
 *Black contours show the perimeter at iterations 1, 667 and 1334, and the colored lines are robot tracks. Most robots lock onto the edge within a few hundred iterations and then move back and forth along it. A robot that starts off the spill takes a wide plateau-mode loop before it finds the gradient.*
 
