@@ -79,11 +79,11 @@ The figures below come from running the unmodified algorithm in **GNU Octave 8.4
 
 ### Stage 1 – The flock reaches the spill
 
-![Flocking paths](figures/01_flocking_paths.png)
+![Flocking paths](OilSpill/figures/01_flocking_paths.png)
 
 *The six robots (black ✱ = start) move together toward the spill peak (blue ✱). The flock freezes when the first robot reaches the 0.15 contour.*
 
-![Pairwise distances while flocking](figures/02_flocking_distances.png)
+![Pairwise distances while flocking](OilSpill/figures/02_flocking_distances.png)
 
 *Distances along the seven graph edges shrink steadily as the flock closes in. They go flat at t ≈ 0.1, when the stop condition fires. Everything after that is the frozen state.*
 
@@ -91,7 +91,7 @@ The figures below come from running the unmodified algorithm in **GNU Octave 8.4
 
 | Start of stage 2 | After 2000 iterations |
 |---|---|
-| ![Initial](figures/03_spill_agents_initial.png) | ![Final](figures/05_spill_agents_final.png) |
+| ![Initial](OilSpill/figures/03_spill_agents_initial.png) | ![Final](OilSpill/figures/05_spill_agents_final.png) |
 
 *The white line is the c = 0.15 perimeter and black **+** marks are the robots. At the start, the robots sit in a cluster at the lower-left edge of a young, concentrated spill (peak ≈ 1.0). By the end they are spread around the perimeter of a much wider and weaker spill (peak ≈ 0.18).*
 
@@ -99,13 +99,13 @@ The figures below come from running the unmodified algorithm in **GNU Octave 8.4
 
 *Black contours show the perimeter at iterations 1, 667 and 1334, and the colored lines are robot tracks. Most robots lock onto the edge within a few hundred iterations and then move back and forth along it. A robot that starts off the spill takes a wide plateau-mode loop before it finds the gradient.*
 
-![Perimeter tracks, seed 2](figures/04b_perimeter_tracks_seed2.png)
+![Perimeter tracks, seed 2](OilSpill/figures/04b_perimeter_tracks_seed2.png)
 
 *Seed 2 shows the plateau term's worst case. One robot (orange) circles far outside the spill for about 700 iterations before it is pulled back to the perimeter.*
 
 | Concentration sampled by each robot | Distance to the two nearest neighbors |
 |---|---|
-| ![Concentrations](figures/06_agent_concentrations.png) | ![Neighbor distances](figures/07_neighbor_distances.png) |
+| ![Concentrations](OilSpill/figures/06_agent_concentrations.png) | ![Neighbor distances](OilSpill/figures/07_neighbor_distances.png) |
 
 *Robots are sampled every 20 iterations, so the x-axis runs 0–100 samples, or 0–2000 iterations. Every robot converges to the 0.15 threshold and stays within about ±0.01 of it. Neighbor spacing jumps after the flock breaks up, then settles at about 10–15 cells as the robots spread around the edge.*
 
